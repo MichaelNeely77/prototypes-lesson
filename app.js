@@ -38,10 +38,13 @@ Person.prototype.printAge = function() {
 
 console.dir(Person);
 
-const person = new Person();
+const p = new Person();
 
-person.greet();
-person.printAge();
-console.log(person.__proto__);
+p.greet();
+p.printAge();
+console.log(p.length);
+console.log(p.toString());
+const p2 = new p.__proto__.constructor();
+console.dir(Object.prototype.__proto__);
 
 
